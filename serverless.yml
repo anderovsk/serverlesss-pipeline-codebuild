@@ -1,0 +1,11 @@
+service: anubis-lambda-healthcheck
+provider:
+  name: aws
+  runtime: python3.9
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
