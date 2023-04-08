@@ -7,4 +7,4 @@ phases:
       npm install
   build:
     commands:
-      if [ "$CODEBUILD_WEBHOOK_HEAD_REF" = "main" ]; then serverless deploy --stage prod; elif [ "$CODEBUILD_WEBHOOK_HEAD_REF" = "develop" ]; then serverless deploy --stage dev; elif [ "$CODEBUILD_WEBHOOK_HEAD_REF" = "staging" ]; then serverless deploy --stage staging; else echo serverless deploy --stage demo; fi
+      if [ "$CODEBUILD_WEBHOOK_HEAD_REF" = "main" ]; then serverless deploy --stage prod; elif [ "$CODEBUILD_WEBHOOK_HEAD_REF" = "develop" ]; then serverless deploy --stage dev; elif [ "$CODEBUILD_WEBHOOK_HEAD_REF" = "staging" ]; then serverless deploy --stage staging; else serverless deploy --stage demo; fi
