@@ -7,4 +7,4 @@ phases:
       npm install
   build:
     commands:
-      - buildspec.sh
+      - ./buildspec.sh
