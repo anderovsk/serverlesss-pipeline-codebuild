@@ -6,6 +6,7 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-20.04
+    environment: staging
     strategy:
       matrix:
         node-version: [14.x]
