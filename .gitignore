@@ -19,6 +19,11 @@ var/
 .serverless
 .terraform
 
+<<<<<<< HEAD
 
 
 asdasdasd
+=======
+#Docker
+.dockerignore
+>>>>>>> 51d50a3 (Test)
