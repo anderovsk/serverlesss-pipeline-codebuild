@@ -1,6 +1,10 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      npm install -g serverless
+      npm install
   build:
     commands:
       - ./buildspec.sh

@@ -1,6 +1,4 @@
 #!/bin/bash
-npm install -g serverless
-npm install
 if [[ "$CODEBUILD_WEBHOOK_HEAD_REF" == refs/tags/* ]];
 then
     echo "Deploy Production"
