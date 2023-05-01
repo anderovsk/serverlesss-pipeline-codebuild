@@ -13,6 +13,3 @@ then
     serverless deploy --stage stg
 else echo "demo"
 fi
-
-
-
